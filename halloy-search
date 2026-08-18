@@ -1,0 +1,4 @@
+#!/bin/sh
+# Run halloy_search.py with the project venv's python.
+dir="$(cd "$(dirname "$0")" && pwd)"
+exec "$dir/.venv/bin/python" "$dir/halloy_search.py" "$@"
